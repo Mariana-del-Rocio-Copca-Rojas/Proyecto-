@@ -3,16 +3,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { HrComponent } from './hr.component';
 import { AttendanceComponent } from './attendance/pages/attendance/attendance.component';
 import { ShiftChangeComponent } from './shift-change/pages/shift-change/shift-change.component';
-import { ShiftChangeFormComponent } from './shift-change/pages/shift-change-form/shift-change-form.component'; // 👈 IMPORTANTE
+import { ShiftChangeFormComponent } from './shift-change/pages/shift-change-form/shift-change-form.component';
+import { DisciplinaryReportsComponent } from './disciplinary-reports/pages/disciplinary-reports/disciplinary-reports.component';
+
 
 const routes: Routes = [
   {
     path: '',
-    component: HrComponent, // 👈 Aseguramos que esté anidado dentro de HR
+    component: HrComponent, 
     children: [
       { path: 'attendance', component: AttendanceComponent },
       { path: 'shift-change', component: ShiftChangeComponent },
-      { path: 'shift-change/form', component: ShiftChangeFormComponent } // 👈 NUEVA RUTA
+      { path: 'disciplinary-reports', component: DisciplinaryReportsComponent }
     ]
   }
 ];

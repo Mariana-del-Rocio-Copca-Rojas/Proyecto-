@@ -1,0 +1,86 @@
+
+<div class="content-header">
+    <div class="container-fluid">
+      <h1 class="m-0">Reportes Indisciplinarios</h1>
+    </div>
+  </div>
+  
+  <div class="content">
+    <div class="container-fluid">
+  
+      <!-- Filtros -->
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label>Clave Empleado:</label>
+          <input type="text" class="form-control" placeholder="Clave">
+        </div>
+        <div class="col-md-2">
+          <label>Departamento:</label>
+          <select class="form-control">
+            <option>Seleccione</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label>Status:</label>
+          <select class="form-control">
+            <option>PENDIENTE</option>
+            <option>RESUELTO</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label>No. Folio:</label>
+          <input type="text" class="form-control" placeholder="Folio">
+        </div>
+        <div class="col-md-2">
+          <label>Puesto:</label>
+          <input type="text" class="form-control" placeholder="Puesto">
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+          <button class="btn btn-secondary w-100 mr-1">Limpiar</button>
+          <button class="btn btn-primary w-100">Buscar</button>
+        </div>
+      </div>
+  
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label>De:</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <label>A:</label>
+          <input type="date" class="form-control">
+        </div>
+      </div>
+  
+      <!-- Tabla -->
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <strong>REPORTES INDISCIPLINARIOS</strong>
+        </div>
+        <div class="card-body p-0">
+          <table class="table table-bordered table-striped m-0">
+            <thead>
+              <tr>
+                <th>Folio</th>
+                <th>Cve. Empleado</th>
+                <th>Nombre</th>
+                <th>Puesto</th>
+                <th>Departamento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Aquí irán los datos futuros -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+      <!-- Botones abajo -->
+      <div class="mt-3 d-flex justify-content-center">
+        <button class="btn btn-outline-primary mr-2">Cargar Layer</button>
+        <button class="btn btn-outline-success">Salvar Layer</button>
+      </div>
+  
+    </div>
+  </div>
+  

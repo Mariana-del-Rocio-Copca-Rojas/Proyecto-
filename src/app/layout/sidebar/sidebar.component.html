@@ -1,98 +1,111 @@
 <!-- Sidebar con 8 departamentos (sólo RH tiene submenús por ahora) -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a routerLink="/dashboard" class="brand-link d-flex align-items-center px-3">
-        <!-- Texto SEPSA -->
-        <div class="logo-text">
-          <strong class="text-white" style="font-size: 1.4rem;">SEPSA</strong><br />
-          <small style="font-size: 0.65rem; color: #ff5630;">SERVICIOS ESPECIALES PORTUARIOS</small>
-        </div>
-      </a>
-            
-      
-    <div class="sidebar">
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
-          <!-- Dashboard -->
-          <li class="nav-item">
-            <a routerLink="/dashboard" class="nav-link">
-              <i class="nav-icon fas fa-home"></i>
-              <p>Inicio</p>
-            </a>
-          </li>
-  
-          <!-- Departamento RH -->
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
-              <p>
-                Recursos Humanos
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link"><p>Organización</p></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><p>Evaluaciones</p></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><p>Selección y Contratación</p></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><p>Compensaciones</p></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><p>Capacitación</p></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><p>Laboral</p></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><p>Seguridad e Higiene</p></a> <!-- ✅ Nueva opción añadida -->
-              </li>
-              <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                  <p>
-                    Nómina
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
-                      <p>Registros<i class="right fas fa-angle-left"></i></p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                      <li class="nav-item">
-                        <a routerLink="/hr/attendance" class="nav-link"><p>Asistencia</p></a>
-                      </li>
-                      <li class="nav-item">
-                        <a routerLink="/hr/shift-change" class="nav-link"><p>Cambio de Turno</p></a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><p>Ventana</p></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><p>Ayuda</p></a>
-              </li>
-            </ul>
-          </li>
-  
-          <!-- Otros departamentos ficticios -->
-          <li class="nav-item"><a href="#" class="nav-link"><p>Depto 2</p></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><p>Depto 3</p></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><p>Depto 4</p></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><p>Depto 5</p></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><p>Depto 6</p></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><p>Depto 7</p></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><p>Depto 8</p></a></li>
-        </ul>
-      </nav>
+  <a routerLink="/dashboard" class="brand-link d-flex align-items-center px-3">
+    <div class="logo-text">
+      <strong class="text-white" style="font-size: 1.4rem;">SEPSA</strong><br />
+      <small style="font-size: 0.65rem; color: #ff5630;">SERVICIOS ESPECIALES PORTUARIOS</small>
     </div>
-  </aside>
-  
+  </a>
+
+  <div class="sidebar">
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+        <!-- Dashboard -->
+        <li class="nav-item">
+          <a routerLink="/dashboard" class="nav-link">
+            <i class="nav-icon fas fa-home"></i>
+            <p>Inicio</p>
+          </a>
+        </li>
+
+        <!-- Departamento RH -->
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-users"></i>
+            <p>
+              Recursos Humanos
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="#" class="nav-link"><p>Organización</p></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><p>Evaluaciones</p></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><p>Selección y Contratación</p></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><p>Compensaciones</p></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><p>Capacitación</p></a>
+            </li>
+
+            <!-- Laboral -->
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <p>
+                  Laboral
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a routerLink="/hr/disciplinary-reports" class="nav-link"><p>Reportes Indisciplinarios</p></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link"><p>Seguridad e Higiene</p></a>
+            </li>
+
+            <!-- Nómina -->
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <p>
+                  Nómina
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item has-treeview">
+                  <a href="#" class="nav-link">
+                    <p>Registros<i class="right fas fa-angle-left"></i></p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a routerLink="/hr/attendance" class="nav-link"><p>Asistencia</p></a>
+                    </li>
+                    <li class="nav-item">
+                      <a routerLink="/hr/shift-change" class="nav-link"><p>Cambio de Turno</p></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link"><p>Ventana</p></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><p>Ayuda</p></a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Otros departamentos ficticios -->
+        <li class="nav-item"><a href="#" class="nav-link"><p>Depto 2</p></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><p>Depto 3</p></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><p>Depto 4</p></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><p>Depto 5</p></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><p>Depto 6</p></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><p>Depto 7</p></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><p>Depto 8</p></a></li>
+      </ul>
+    </nav>
+  </div>
+</aside>
