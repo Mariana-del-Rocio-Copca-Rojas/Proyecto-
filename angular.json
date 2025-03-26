@@ -39,9 +39,13 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+             "src/assets/admin-lte/dist/css/adminlte.min.css",
+  "src/assets/admin-lte/plugins/fontawesome-free/css/all.min.css",
+  "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [ "src/assets/admin-lte/plugins/jquery/jquery.min.js",
+            "src/assets/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js",
+            "src/assets/admin-lte/dist/js/adminlte.min.js"],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -110,5 +114,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "077dc38e-c721-4e84-af4a-f103a3c33efd"
   }
 }

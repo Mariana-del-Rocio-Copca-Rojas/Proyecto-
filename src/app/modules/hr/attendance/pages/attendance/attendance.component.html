@@ -1,0 +1,71 @@
+<section class="content p-3">
+    <div class="container-fluid">
+      <!-- Filtros -->
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label>Clave:</label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar clave">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-search"></i></span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <label>Departamento:</label>
+          <select class="form-control">
+            <option selected disabled>Seleccione</option>
+          </select>
+        </div>
+  
+        <div class="col-md-2">
+          <label>Estado:</label>
+          <select class="form-control">
+            <option selected disabled>Seleccione</option>
+          </select>
+        </div>
+  
+        <div class="col-md-2">
+          <label>Del:</label>
+          <input type="date" class="form-control">
+        </div>
+  
+        <div class="col-md-2">
+          <label>Al:</label>
+          <input type="date" class="form-control">
+        </div>
+      </div>
+  
+      <!-- Semáforo -->
+      <div class="mb-2">
+        <span class="badge bg-success">Asistencia</span>
+        <span class="badge bg-warning text-dark">Retardo</span>
+        <span class="badge bg-danger">Inasistencia</span>
+      </div>
+  
+      <!-- Tabla -->
+      <div class="card">
+        <div class="card-body table-responsive p-0">
+          <table class="table table-bordered text-center">
+            <thead class="thead-dark">
+              <tr>
+                <th>Clave</th>
+                <th>Empleado</th>
+                <th>Fecha y hora de entrada</th>
+                <th>Fecha y hora de salida</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Contenido vacío por ahora -->
+              <tr *ngIf="true">
+                <td colspan="5">Sin registros por el momento</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  

@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .wrapper {
+    min-height: 100vh; // altura mínima de toda la pantalla
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-sidebar {
+    height: 100vh;
+    position: fixed;
+  }
+
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  app-root {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+  }
+  
+  .content-wrapper {
+    padding: 0 !important;
+    margin-left: 250px; // para que no se sobreponga al sidebar
+    min-height: 100vh;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  .main-header {
+    height: auto !important;
+    min-height: 0;
+    padding: 0;
+  }
+  

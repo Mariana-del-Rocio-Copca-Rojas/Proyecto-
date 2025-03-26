@@ -1,0 +1,60 @@
+<div class="container-fluid px-4">
+  <h4 class="mb-4 mt-3">Cambios de Turno</h4>
+
+  <!-- Icon buttons -->
+  <div class="mb-3 d-flex gap-2">
+    <button class="btn btn-sm btn-primary" [routerLink]="['/hr/shift-change/form']">
+      <i class="fas fa-plus"></i>
+    </button>
+    <button class="btn btn-sm btn-danger"><i class="fas fa-times"></i></button>
+    <button class="btn btn-sm btn-success"><i class="fas fa-save"></i></button>
+    <button class="btn btn-sm btn-warning"><i class="fas fa-undo"></i></button>
+    <button class="btn btn-sm btn-secondary"><i class="fas fa-arrow-right"></i></button>
+    <button class="btn btn-sm btn-info"><i class="fas fa-search"></i></button>
+  </div>
+
+  <!-- Formulario de búsqueda -->
+  <form>
+    <div class="row mb-3">
+      <div class="col-md-2">
+        <label class="form-label">Clave</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Apellido Paterno</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Nombres</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-2">
+        <label class="form-label">Puesto</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-2">
+        <label class="form-label">Depto</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <label class="form-label">Autorizó</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Del</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Al</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="col-md-3 d-flex align-items-end justify-content-end gap-2">
+        <button type="reset" class="btn btn-secondary w-50">Limpiar</button>
+        <button type="submit" class="btn btn-primary w-50">Buscar</button>
+      </div>
+    </div>
+  </form>
+</div>

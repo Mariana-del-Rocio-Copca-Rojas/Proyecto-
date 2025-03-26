@@ -1,0 +1,100 @@
+<div class="container mt-4 mb-4">
+    <h4 class="mb-4">Registro de Cambio de Turno</h4>
+  
+    <!-- Empleado que solicita -->
+    <fieldset class="mb-4">
+      <legend>Empleado que Solicitó el Cambio de Turno</legend>
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label>Clave</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <label>Nombre</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <label>Puesto</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+  
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label>Depto</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label>Fecha</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label>Turno</label>
+          <select class="form-control">
+            <option>Primero</option>
+            <option>Segundo</option>
+            <option>Tercero</option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label>Condiciones y Motivos del Cambio</label>
+        <textarea class="form-control" rows="2"></textarea>
+      </div>
+  
+      <div class="col-md-4">
+        <label>Clave Supervisor que autorizó</label>
+        <input type="text" class="form-control">
+      </div>
+    </fieldset>
+  
+    <!-- Empleado que cubrirá -->
+    <fieldset class="mb-4">
+      <legend>Empleado que Cubrirá el Cambio de Turno</legend>
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label>Clave</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <label>Nombre</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-5">
+          <label>Puesto</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+  
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label>Depto</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label>Fecha</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label>Turno</label>
+          <select class="form-control">
+            <option>Primero</option>
+            <option>Segundo</option>
+            <option>Tercero</option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <label>Clave Supervisor que autorizó</label>
+        <input type="text" class="form-control">
+      </div>
+    </fieldset>
+  
+    <div class="text-end">
+      <button class="btn btn-secondary" [routerLink]="['/hr/shift-change']">Regresar</button>
+      <button class="btn btn-success">Guardar</button>
+    </div>
+  </div>
+  

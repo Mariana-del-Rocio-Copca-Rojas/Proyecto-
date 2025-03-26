@@ -1,0 +1,21 @@
+.container-fluid {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h4 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  button i {
+    pointer-events: none;
+  }
+  
+  form .form-label {
+    font-weight: 500;
+    color: #444;
+  }
+  
