@@ -8,6 +8,8 @@ import { ShiftChangeModule } from './shift-change/shift-change.module';
 import { AttendanceModule } from './attendance/attendance.module';
 import { DisciplinaryReportsModule } from './disciplinary-reports/disciplinary-reports.module';
 
+
+
 @NgModule({
   declarations: [
     HrComponent,
@@ -19,7 +21,9 @@ import { DisciplinaryReportsModule } from './disciplinary-reports/disciplinary-r
     HrRoutingModule,
     AttendanceModule,
     ShiftChangeModule,
-    DisciplinaryReportsModule
+    DisciplinaryReportsModule,
+
+    
   ]
 })
 export class HrModule {}
