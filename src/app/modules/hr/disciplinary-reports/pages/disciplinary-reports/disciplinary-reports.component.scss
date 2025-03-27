@@ -1,94 +1,73 @@
-// Ajustes del título principal
 .content-header h1 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+// Estilo de la tarjeta
+.custom-card {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+
+  .card-header {
+    background-color: #343a40;
+    color: white;
     font-weight: bold;
-    color: #343a40;
+    text-align: center;
+    padding: 0.75rem;
   }
-  
-  // Tarjeta de tabla
-  .card {
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-  
-    .card-header {
-      background-color: #1e3d59; // Azul oscuro personalizado
-      color: #ffffff;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1rem;
-      padding: 0.75rem;
-    }
-  
-    .card-body {
-      padding: 0;
-    }
-  
-    table {
-      margin-bottom: 0;
-      thead th {
-        background-color: #f4f6f9;
-        text-align: center;
-        font-weight: 600;
-      }
-  
-      tbody td {
-        text-align: center;
-      }
-    }
+
+  .card-body {
+    padding: 0;
   }
-  
-  // Espaciado entre filtros
-  .row.mb-3 {
-    gap: 1rem 0;
-  
-    label {
-      font-weight: 500;
-    }
-  
-    input,
-    select {
-      height: 38px;
-      font-size: 0.9rem;
-    }
-  }
-  
-  // Botones
-  .btn {
-    font-size: 0.9rem;
-  
-    &.btn-outline-primary {
-      border-color: #007bff;
-      color: #007bff;
-  
-      &:hover {
-        background-color: #007bff;
-        color: white;
-      }
-    }
-  
-    &.btn-outline-success {
-      border-color: #28a745;
-      color: #28a745;
-  
-      &:hover {
-        background-color: #28a745;
-        color: white;
-      }
-    }
-  
-    &.btn-secondary {
-      background-color: #6c757d;
+
+  table {
+    margin-bottom: 0;
+
+    thead th {
+      background-color: #343a40;
       color: white;
-  
-      &:hover {
-        background-color: #5a6268;
-      }
+      font-weight: 600;
+      text-align: center;
+    }
+
+    tbody td {
+      text-align: center;
     }
   }
-  
-  // Ajuste de botones de acción inferiores
-  .mt-3 {
-    margin-top: 2rem !important;
+}
+
+// Estilo de botones
+.btn {
+  font-size: 0.9rem;
+
+  &.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
   }
-  
+
+  &.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  &.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+
+  &.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+
+  &.btn-dark {
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+}

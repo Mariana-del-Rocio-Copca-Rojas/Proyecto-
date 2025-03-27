@@ -1,54 +1,72 @@
 <div class="container-fluid px-4">
   <h4 class="mb-4 mt-3">Cambios de Turno</h4>
 
-  <!-- Icon buttons -->
-  <div class="mb-3 d-flex gap-2">
-    <button class="btn btn-sm btn-primary" [routerLink]="['/hr/shift-change/form']">
-      <i class="fas fa-plus"></i>
-    </button>
-    <button class="btn btn-sm btn-danger"><i class="fas fa-times"></i></button>
-    <button class="btn btn-sm btn-success"><i class="fas fa-save"></i></button>
-    <button class="btn btn-sm btn-warning"><i class="fas fa-undo"></i></button>
-    <button class="btn btn-sm btn-secondary"><i class="fas fa-arrow-right"></i></button>
-    <button class="btn btn-sm btn-info"><i class="fas fa-search"></i></button>
+  <!-- Botones de acción - mismo estilo que reportes indisciplinarios -->
+  <div class="btn-toolbar mb-3 shadow-sm p-2 rounded bg-white" role="toolbar">
+    <div class="btn-group me-2" role="group">
+      <button class="btn btn-sm btn-primary" [routerLink]="['/hr/shift-change/form']" title="Nuevo">
+        <i class="fas fa-plus"></i> Nuevo
+      </button>
+      <button class="btn btn-sm btn-danger" title="Eliminar">
+        <i class="fas fa-trash-alt"></i> Eliminar
+      </button>
+      <button class="btn btn-sm btn-success" title="Guardar">
+        <i class="fas fa-save"></i> Guardar
+      </button>
+    </div>
+
+    <div class="btn-group me-2" role="group">
+      <button class="btn btn-sm btn-secondary" title="Anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="btn btn-sm btn-secondary" title="Siguiente">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button class="btn btn-sm btn-dark" title="Buscar">
+        <i class="fas fa-search"></i> Buscar
+      </button>
+    </div>
   </div>
 
   <!-- Formulario de búsqueda -->
   <form>
     <div class="row mb-3">
       <div class="col-md-2">
-        <label class="form-label">Clave</label>
+        <label class="form-label">Clave:</label>
         <input type="text" class="form-control">
       </div>
       <div class="col-md-3">
-        <label class="form-label">Apellido Paterno</label>
+        <label class="form-label">Apellido Paterno:</label>
         <input type="text" class="form-control">
       </div>
       <div class="col-md-3">
-        <label class="form-label">Nombres</label>
+        <label class="form-label">Nombres:</label>
         <input type="text" class="form-control">
       </div>
       <div class="col-md-2">
-        <label class="form-label">Puesto</label>
+        <label class="form-label">Puesto:</label>
         <input type="text" class="form-control">
       </div>
       <div class="col-md-2">
-        <label class="form-label">Depto</label>
+        <label class="form-label">Depto:</label>
         <input type="text" class="form-control">
       </div>
     </div>
 
     <div class="row mb-4">
       <div class="col-md-3">
-        <label class="form-label">Autorizó</label>
+        <label class="form-label">Autorizó:</label>
         <input type="text" class="form-control">
       </div>
       <div class="col-md-3">
-        <label class="form-label">Del</label>
+        <label class="form-label">Del:</label>
         <input type="date" class="form-control">
       </div>
       <div class="col-md-3">
-        <label class="form-label">Al</label>
+        <label class="form-label">Al:</label>
         <input type="date" class="form-control">
       </div>
       <div class="col-md-3 d-flex align-items-end justify-content-end gap-2">

@@ -5,7 +5,7 @@ import { AttendanceComponent } from './attendance/pages/attendance/attendance.co
 import { ShiftChangeComponent } from './shift-change/pages/shift-change/shift-change.component';
 import { ShiftChangeFormComponent } from './shift-change/pages/shift-change-form/shift-change-form.component';
 import { DisciplinaryReportsComponent } from './disciplinary-reports/pages/disciplinary-reports/disciplinary-reports.component';
-
+import { NewDisciplinaryReportComponent } from './disciplinary-reports/pages/new-disciplinary-report/new-disciplinary-report.component';
 
 const routes: Routes = [
   {
@@ -13,8 +13,20 @@ const routes: Routes = [
     component: HrComponent, 
     children: [
       { path: 'attendance', component: AttendanceComponent },
-      { path: 'shift-change', component: ShiftChangeComponent },
-      { path: 'disciplinary-reports', component: DisciplinaryReportsComponent }
+      { 
+        path: 'shift-change', 
+        children: [
+          { path: '', component: ShiftChangeComponent },
+          { path: 'new', component: ShiftChangeFormComponent }
+        ]
+      },
+      { 
+        path: 'disciplinary-reports', 
+        children: [
+          { path: '', component: DisciplinaryReportsComponent },
+          { path: 'new', component: NewDisciplinaryReportComponent }
+        ]
+      }
     ]
   }
 ];
