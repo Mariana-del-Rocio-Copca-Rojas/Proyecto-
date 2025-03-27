@@ -1,86 +1,118 @@
-
 <div class="content-header">
-    <div class="container-fluid">
-      <h1 class="m-0">Reportes Indisciplinarios</h1>
-    </div>
+  <div class="container-fluid">
+    <h1 class="m-0">Reportes Indisciplinarios</h1>
   </div>
-  
-  <div class="content">
-    <div class="container-fluid">
-  
-      <!-- Filtros -->
-      <div class="row mb-3">
-        <div class="col-md-2">
-          <label>Clave Empleado:</label>
-          <input type="text" class="form-control" placeholder="Clave">
-        </div>
-        <div class="col-md-2">
-          <label>Departamento:</label>
-          <select class="form-control">
-            <option>Seleccione</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label>Status:</label>
-          <select class="form-control">
-            <option>PENDIENTE</option>
-            <option>RESUELTO</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label>No. Folio:</label>
-          <input type="text" class="form-control" placeholder="Folio">
-        </div>
-        <div class="col-md-2">
-          <label>Puesto:</label>
-          <input type="text" class="form-control" placeholder="Puesto">
-        </div>
-        <div class="col-md-2 d-flex align-items-end">
-          <button class="btn btn-secondary w-100 mr-1">Limpiar</button>
-          <button class="btn btn-primary w-100">Buscar</button>
-        </div>
+</div>
+
+<div class="content">
+  <div class="container-fluid">
+
+    <!-- Botones de acción -->
+    <div class="btn-toolbar mb-3 shadow-sm p-2 rounded bg-white" role="toolbar">
+      <div class="btn-group me-2" role="group">
+        <button class="btn btn-sm btn-primary" [routerLink]="['/hr/disciplinary-reports/new']" title="Nuevo">
+          <i class="fas fa-plus"></i> Nuevo
+        </button>        
+        <button class="btn btn-sm btn-danger" title="Eliminar">
+          <i class="fas fa-trash-alt"></i> Eliminar
+        </button>
+        <button class="btn btn-sm btn-success" title="Guardar">
+          <i class="fas fa-save"></i> Guardar
+        </button>
       </div>
-  
-      <div class="row mb-3">
-        <div class="col-md-2">
-          <label>De:</label>
-          <input type="date" class="form-control">
-        </div>
-        <div class="col-md-2">
-          <label>A:</label>
-          <input type="date" class="form-control">
-        </div>
+
+      <div class="btn-group me-2" role="group">
+        <button class="btn btn-sm btn-secondary" title="Anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="btn btn-sm btn-secondary" title="Siguiente">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
-  
-      <!-- Tabla -->
-      <div class="card">
-        <div class="card-header bg-primary text-white">
-          <strong>REPORTES INDISCIPLINARIOS</strong>
-        </div>
-        <div class="card-body p-0">
-          <table class="table table-bordered table-striped m-0">
-            <thead>
-              <tr>
-                <th>Folio</th>
-                <th>Cve. Empleado</th>
-                <th>Nombre</th>
-                <th>Puesto</th>
-                <th>Departamento</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Aquí irán los datos futuros -->
-            </tbody>
-          </table>
-        </div>
+
+      <div class="btn-group" role="group">
+        <button class="btn btn-sm btn-dark" title="Buscar">
+          <i class="fas fa-search"></i> Buscar
+        </button>
       </div>
-  
-      <!-- Botones abajo -->
-      <div class="mt-3 d-flex justify-content-center">
-        <button class="btn btn-outline-primary mr-2">Cargar Layer</button>
-        <button class="btn btn-outline-success">Salvar Layer</button>
-      </div>
-  
     </div>
+
+    <!-- Filtros reorganizados -->
+    <div class="row mb-3">
+      <div class="col-md-2">
+        <label>Clave Empleado:</label>
+        <input type="text" class="form-control" placeholder="Clave">
+      </div>
+      <div class="col-md-2">
+        <label>Departamento:</label>
+        <select class="form-control">
+          <option>Seleccione</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label>Status:</label>
+        <select class="form-control">
+          <option>PENDIENTE</option>
+          <option>RESUELTO</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label>No. Folio:</label>
+        <input type="text" class="form-control" placeholder="Folio">
+      </div>
+      <div class="col-md-2">
+        <label>Puesto:</label>
+        <input type="text" class="form-control" placeholder="Puesto">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-2">
+        <label>Del:</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="col-md-2">
+        <label>Al:</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="col-md-2 d-flex align-items-end">
+        <button class="btn btn-secondary w-100 mr-1">Limpiar</button>
+      </div>
+      <div class="col-md-2 d-flex align-items-end">
+        <button class="btn btn-primary w-100">Buscar</button>
+      </div>
+    </div>
+
+    <!-- Tabla -->
+    <div class="card custom-card">
+      <div class="card-header">
+        <strong>REPORTES INDISCIPLINARIOS</strong>
+      </div>
+      <div class="card-body p-0">
+        <table class="table table-bordered table-striped m-0">
+          <thead>
+            <tr>
+              <th>Folio</th>
+              <th>Cve. Empleado</th>
+              <th>Nombre</th>
+              <th>Puesto</th>
+              <th>Departamento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5" class="text-center">Sin registros por el momento</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Botones al pie de la tabla -->
+    <div class="mt-3 d-flex justify-content-center">
+      <button class="btn btn-outline-primary mr-2">Cargar Layer</button>
+      <button class="btn btn-outline-success">Salvar Layer</button>
+    </div>
+
   </div>
-  
+</div>
