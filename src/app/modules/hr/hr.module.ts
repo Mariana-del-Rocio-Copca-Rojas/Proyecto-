@@ -7,12 +7,14 @@ import { HrComponent } from './hr.component';
 import { ShiftChangeModule } from './shift-change/shift-change.module';
 import { AttendanceModule } from './attendance/attendance.module';
 import { DisciplinaryReportsModule } from './disciplinary-reports/disciplinary-reports.module';
+import { EmployeeSearchModalComponent } from './disciplinary-reports/components/employee-search-modal/employee-search-modal.component';
 
 
 
 @NgModule({
   declarations: [
     HrComponent,
+    EmployeeSearchModalComponent,
  
   ],
   imports: [

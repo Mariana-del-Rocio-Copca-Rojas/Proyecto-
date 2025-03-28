@@ -1,1 +1,135 @@
-<p>new-disciplinary-report works!</p>
+<div class="content">
+    <div class="container-fluid">
+  
+      <!-- Encabezado -->
+      <div class="row mb-2 align-items-center">
+        <div class="col-md-6">
+          <h3 class="m-0">Nuevo Reporte Indisciplinario</h3>
+        </div>
+        <div class="col-md-6 text-right">
+          <button class="btn btn-secondary btn-sm" [routerLink]="['/hr/disciplinary-reports']">
+            <i class="fas fa-arrow-left"></i> Regresar
+          </button>
+        </div>
+      </div>
+  
+      <!-- Card Principal -->
+      <div class="card shadow-sm" style="border-top: 3px solid rgb(54, 72, 84);">
+        <div class="card-header" style="background-color: rgb(54, 72, 84); color: #fff;">
+          <h3 class="card-title">Información General</h3>
+        </div>
+        <div class="card-body">
+          <!-- Primera fila -->
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label>Folio:</label>
+              <input type="text" class="form-control form-control-sm">
+            </div>
+            <div class="form-group col-md-3">
+              <label>Clave Empleado:</label>
+              <input type="text" class="form-control form-control-sm">
+            </div>
+            <div class="form-group col-md-3">
+              <label>Nombre:</label>
+              <input type="text" class="form-control form-control-sm">
+            </div>
+            <div class="form-group col-md-3">
+              <label>Fecha:</label>
+              <input type="date" class="form-control form-control-sm">
+            </div>
+          </div>
+  
+          <!-- Segunda fila -->
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label>Puesto:</label>
+              <input type="text" class="form-control form-control-sm">
+            </div>
+            <div class="form-group col-md-3">
+              <label>Departamento:</label>
+              <input type="text" class="form-control form-control-sm">
+            </div>
+          </div>
+  
+          <!-- Reporte Indisciplinario -->
+          <div class="card mt-4 shadow-sm">
+            <div class="card-header" style="background-color: rgb(54, 72, 84); color: #fff;">
+              <h3 class="card-title">Reporte Indisciplinario</h3>
+            </div>
+            <div class="card-body">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Tipo de Indisciplina:</label>
+                  <input type="text" class="form-control form-control-sm">
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Status:</label>
+                  <select class="form-control form-control-sm">
+                    <option>Seleccione</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Descripción de la indisciplina:</label>
+                  <textarea rows="3" class="form-control form-control-sm"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Declaración del trabajador:</label>
+                  <textarea rows="3" class="form-control form-control-sm"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Recomendación:</label>
+                  <textarea rows="3" class="form-control form-control-sm"></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Tipo de acción o medida disciplinaria:</label>
+                  <textarea rows="3" class="form-control form-control-sm"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Responsable -->
+          <div class="card mt-4 shadow-sm">
+            <div class="card-header" style="background-color: rgb(54, 72, 84); color: #fff;">
+              <h3 class="card-title">Responsable</h3>
+            </div>
+            <div class="card-body">
+              <div class="form-row">
+                <div class="form-group col-md-3">
+                  <label>Cve.:</label>
+                  <input type="text" class="form-control form-control-sm">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Nombre:</label>
+                  <input type="text" class="form-control form-control-sm">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Departamento:</label>
+                  <input type="text" class="form-control form-control-sm">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Puesto:</label>
+                  <input type="text" class="form-control form-control-sm">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Botón Guardar -->
+          <div class="text-right mt-3">
+            <button class="btn btn-sm btn-success">
+              <i class="fas fa-save"></i> Guardar Reporte
+            </button>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+
