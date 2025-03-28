@@ -6,6 +6,8 @@ import { ShiftChangeComponent } from './shift-change/pages/shift-change/shift-ch
 import { ShiftChangeFormComponent } from './shift-change/pages/shift-change-form/shift-change-form.component';
 import { DisciplinaryReportsComponent } from './disciplinary-reports/pages/disciplinary-reports/disciplinary-reports.component';
 import { NewDisciplinaryReportComponent } from './disciplinary-reports/pages/new-disciplinary-report/new-disciplinary-report.component';
+import { RequisitionComponent } from './recruitment/pages/requisition/requisition.component';
+
 
 const routes: Routes = [
   {
@@ -17,7 +19,7 @@ const routes: Routes = [
         path: 'shift-change', 
         children: [
           { path: '', component: ShiftChangeComponent },
-          { path: 'new', component: ShiftChangeFormComponent }
+          { path: 'form', component: ShiftChangeFormComponent }
         ]
       },
       { 
@@ -26,7 +28,8 @@ const routes: Routes = [
           { path: '', component: DisciplinaryReportsComponent },
           { path: 'new', component: NewDisciplinaryReportComponent }
         ]
-      }
+      },
+      { path: 'requisition', component: RequisitionComponent } 
     ]
   }
 ];

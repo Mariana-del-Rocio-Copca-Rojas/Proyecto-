@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router'; // 👈 IMPORTANTE
+import { RouterModule } from '@angular/router';
 
 import { ShiftChangeComponent } from './pages/shift-change/shift-change.component';
 import { ShiftChangeFormComponent } from './pages/shift-change-form/shift-change-form.component';
@@ -12,7 +12,7 @@ import { ShiftChangeFormComponent } from './pages/shift-change-form/shift-change
   ],
   imports: [
     CommonModule,
-    RouterModule // 👈 NECESARIO para que [routerLink] funcione
+    RouterModule 
   ]
 })
 export class ShiftChangeModule { }
