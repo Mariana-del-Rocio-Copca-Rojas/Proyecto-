@@ -1,34 +1,77 @@
-<div class="card shadow-sm rounded-3 p-3">
+<div class="card">
     <div class="card-header d-flex justify-content-between align-items-center">
       <h5 class="mb-0">Requisición de Personal</h5>
-      <div class="btn-group">
-        <button class="btn btn-success"><i class="fas fa-plus"></i></button>
-        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-        <button class="btn btn-primary"><i class="fas fa-save"></i></button>
-        <button class="btn btn-secondary"><i class="fas fa-arrow-left"></i></button>
-        <button class="btn btn-secondary"><i class="fas fa-arrow-right"></i></button>
-        <button class="btn btn-info"><i class="fas fa-search"></i></button>
-      </div>
+      <a class="btn btn-success" [routerLink]="['/hr/requisition-form']">
+        <i class="fas fa-plus"></i>
+      </a>
     </div>
   
     <div class="card-body">
-      <table class="table table-striped table-hover">
-        <thead class="thead-dark">
-          <tr>
-            <th>#</th>
-            <th>Departamento</th>
-            <th>Puesto</th>
-            <th>Vacantes</th>
-            <th>Fecha</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Registros irán aquí -->
-          <tr>
-            <td colspan="5" class="text-center text-muted">Sin registros por el momento.</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- Filtros de búsqueda -->
+      <form class="row g-3 mb-3">
+        <div class="col-md-2">
+          <label class="form-label">Num. Requisición</label>
+          <input type="text" class="form-control">
+        </div>
+  
+        <div class="col-md-2">
+          <label class="form-label">Depto</label>
+          <input type="text" class="form-control">
+        </div>
+  
+        <div class="col-md-3">
+          <label class="form-label">Puesto</label>
+          <input type="text" class="form-control">
+        </div>
+  
+        <div class="col-md-2">
+          <label class="form-label">Del</label>
+          <input type="date" class="form-control">
+        </div>
+  
+        <div class="col-md-2">
+          <label class="form-label">Al</label>
+          <input type="date" class="form-control">
+        </div>
+  
+        <div class="col-md-1 d-flex align-items-end">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="pendientes">
+            <label class="form-check-label" for="pendientes">Pendientes</label>
+          </div>
+        </div>
+  
+        <!-- Botones -->
+        <div class="col-12 text-end">
+          <button type="button" class="btn btn-primary me-2">
+            <i class="fas fa-search"></i> Buscar
+          </button>
+          <button type="button" class="btn btn-secondary">
+            <i class="fas fa-eraser"></i> Limpiar
+          </button>
+        </div>
+      </form>
+  
+      <!-- Tabla de resultados -->
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th># Requisición</th>
+              <th>Fecha</th>
+              <th>Departamento</th>
+              <th>Nombre del Solicitante</th>
+              <th>Puesto a Cubrir</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="6" class="text-center">Sin registros por el momento.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
   
